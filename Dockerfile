@@ -3,6 +3,6 @@ FROM ubuntu:latest
 	RUN apt-get update 
 	RUN apt-get -y install g++ nano net-tools inetutils-ping
 	WORKDIR /root/test
-	COPY hello_world.cpp .
-	RUN g++ hello_world.cpp -o hello_world
-	CMD ["./hello_world"]
+	COPY MAP_HW_05_01.cpp .
+	RUN g++ MAP_HW_05_01.cpp -o MAP_HW_05_01
+	CMD ["./MAP_HW_05_01"]
